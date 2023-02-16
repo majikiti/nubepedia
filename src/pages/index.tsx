@@ -26,9 +26,8 @@ function PostPreview({ text, authorName }) {
         flex-direction: column;
         border-radius: 0.5rem;
         border-top: 2px black;
-        background: #F7F9F9;
-      `}
-    >
+        background: #f7f9f9;
+      `}>
       <span css={css``}>{authorName}</span>
       <hr
         css={css`
@@ -57,10 +56,9 @@ export default function IndexPage({ posts }: Props) {
     <Layout>
       <p
         css={css`
-        font-size: 1rem;
-        padding: 0 1rem;
-        `}
-      >
+          font-size: 1rem;
+          padding: 0 1rem;
+        `}>
         投稿一覧
       </p>
       {tempPosts.map((post, i) => (

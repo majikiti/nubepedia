@@ -18,9 +18,9 @@ function PostButton({ children, ...props }) {
         margin: 5px auto;
         border: none;
         border-radius: 30px;
-        background: #1D9BF0;
+        background: #1d9bf0;
         :hover {
-          background: #1A8CD8;
+          background: #1a8cd8;
         }
       `}
       {...props}>
@@ -47,42 +47,40 @@ export default function PostPage() {
   return (
     <Layout>
       <p
-      css={css`
-        padding-left: 1rem;
-        color: #0F1419;
-        font-weight: bold;
-      `}
-    >
-      New Kichitwi
-    </p>
+        css={css`
+          padding-left: 1rem;
+          color: #0f1419;
+          font-weight: bold;
+        `}>
+        New Kichitwi
+      </p>
       <form onSubmit={handleSubmit(onSubmit)}>
-    <div
-      css={css`
-        margin: 0 1.5rem;
-        text-align: right;
-      `}
-    >
-        <textarea
+        <div
           css={css`
-            border: 2px solid #E4E7EA;
-            min-height: 16rem;
-            resize: none;
-            font-size: 1rem;
-            padding: 0.5rem;
-            width: 100%;
-            font-family: Segoe UI;
-            border-radius: 0.4em; 
-            :focus {
-              border: 2px solid #1D9BF0;
-              border-radius: 0.4em; 
-              outline: none; 
-            }
-          `}
-          placeholder="✍️( ՞ةڼ◔)"
-          {...register("body")}
-        />
+            margin: 0 1.5rem;
+            text-align: right;
+          `}>
+          <textarea
+            css={css`
+              border: 2px solid #e4e7ea;
+              min-height: 16rem;
+              resize: none;
+              font-size: 1rem;
+              padding: 0.5rem;
+              width: 100%;
+              font-family: Segoe UI;
+              border-radius: 0.4em;
+              :focus {
+                border: 2px solid #1d9bf0;
+                border-radius: 0.4em;
+                outline: none;
+              }
+            `}
+            placeholder="✍️( ՞ةڼ◔)"
+            {...register("body")}
+          />
           <PostButton>Post</PostButton>
-      </div>
+        </div>
       </form>
     </Layout>
   )

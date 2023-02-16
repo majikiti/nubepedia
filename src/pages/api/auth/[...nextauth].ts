@@ -1,7 +1,7 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
 import NextAuth from "next-auth"
-import TwitterProvider from "next-auth/providers/twitter"
 import EmailProvider from "next-auth/providers/email"
+import TwitterProvider from "next-auth/providers/twitter"
 
 import prisma from "~/libs/db"
 

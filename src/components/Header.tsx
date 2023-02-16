@@ -20,11 +20,11 @@ export default function Header() {
       css={css`
         display: flex;
         justify-content: space-between;
-        border-bottom: 2px solid #EFF3F4;
+        border-bottom: 2px solid #eff3f4;
         padding: 0.8rem;
         font-size: 2rem;
         font-family: Times New Roman;
-        color: #0F1419;
+        color: #0f1419;
       `}>
       <div>
         <Link href="/">
