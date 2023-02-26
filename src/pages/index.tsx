@@ -38,13 +38,19 @@ function PostPreview({ text, authorName }) {
         css={css`
           font-size: 1.2rem;
         `}>
-        {text}
+        <pre>
+          {text}
+        </pre>
       </p>
       <div>
         <Button onClick={() => navigator.clipboard.writeText(text)}>
           Copy
         </Button>
+        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}`}><Button>
+          Tweet
+        </Button></a>
       </div>
+      
     </div>
   )
 }
