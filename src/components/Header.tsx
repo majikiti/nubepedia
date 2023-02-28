@@ -32,6 +32,9 @@ export default function Header() {
         </Link>
       </div>
       <div>
+        <Link href="/post" passHref>
+          <Button>投稿</Button>
+        </Link>
         {session ? (
           <Button onClick={signOut}>ログアウト</Button>
         ) : (
